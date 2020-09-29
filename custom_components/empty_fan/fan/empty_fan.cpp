@@ -1,12 +1,12 @@
-#include "empty_custom_fan.h"
+#include "empty_fan.h"
 #include "esphome/core/log.h"
 
 namespace esphome {
-namespace empty_custom_fan {
+namespace empty_fan {
 
-static const char *TAG = "empty_custom_fan.fan";
+static const char *TAG = "empty_fan.fan";
 
-void EmptyCustomFan::setup() {
+void EmptyFan::setup() {
   auto traits = fan::FanTraits();
   traits.set_direction(false);
   traits.set_oscillation(false);
@@ -17,7 +17,7 @@ void EmptyCustomFan::setup() {
   this->fan_->add_on_state_callback([this]() { this->next_update_ = true; });
 }
 
-void EmptyCustomFan::loop() {
+void EmptyFan::loop() {
   if (!this->next_update_) {
     return; //no state change, nothing to do
   }
@@ -26,9 +26,9 @@ void EmptyCustomFan::loop() {
   //there was a state change, do something here.
 }
 
-void EmptyCustomFan::dump_config() {
+void EmptyFan::dump_config() {
   ESP_LOGCONFIG(TAG, "Empty fan");
 }
 
 }  // namespace binary
-}  // namespace empty_custom_fan
+}  // namespace empty_fan

@@ -4,9 +4,9 @@
 #include "esphome/components/output/float_output.h"
 
 namespace esphome {
-namespace empty_custom_float_output {
+namespace empty_float_output {
 
-class EmptyCustomFloatOutput : public output::FloatOutput, public Component {
+class EmptyFloatOutput : public output::FloatOutput, public Component {
  public:
   void setup() override;
   void write_state(float state) override;
@@ -14,5 +14,5 @@ class EmptyCustomFloatOutput : public output::FloatOutput, public Component {
 };
 
 
-} //namespace empty_custom_float_output
+} //namespace empty_float_output
 } //namespace esphome

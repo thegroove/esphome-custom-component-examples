@@ -3,11 +3,11 @@ import esphome.config_validation as cv
 from esphome.components import light, output
 from esphome.const import CONF_OUTPUT_ID, CONF_OUTPUT
 
-empty_custom_light_ns = cg.esphome_ns.namespace('empty_custom_light')
-EmptyCustomLightOutput = empty_custom_light_ns.class_('EmptyCustomLightOutput', light.LightOutput)
+empty_light_ns = cg.esphome_ns.namespace('empty_light')
+EmptyLightOutput = empty_light_ns.class_('EmptyLightOutput', light.LightOutput)
 
 CONFIG_SCHEMA = light.BRIGHTNESS_ONLY_LIGHT_SCHEMA.extend({
-    cv.GenerateID(CONF_OUTPUT_ID): cv.declare_id(EmptyCustomLightOutput),
+    cv.GenerateID(CONF_OUTPUT_ID): cv.declare_id(EmptyLightOutput),
     cv.Required(CONF_OUTPUT): cv.use_id(output.FloatOutput)
 })
 

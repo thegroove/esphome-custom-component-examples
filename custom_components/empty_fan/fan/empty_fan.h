@@ -5,9 +5,9 @@
 #include "esphome/components/fan/fan_state.h"
 
 namespace esphome {
-namespace empty_custom_fan {
+namespace empty_fan {
 
-class EmptyCustomFan : public Component {
+class EmptyFan : public Component {
  public:
   void set_fan(fan::FanState *fan) { fan_ = fan; }
   void set_output(output::BinaryOutput *output) { output_ = output; }
@@ -21,5 +21,5 @@ class EmptyCustomFan : public Component {
   bool next_update_{true};
 };
 
-}  // namespace empty_custom_fan
+}  // namespace empty_fan
 }  // namespace esphome

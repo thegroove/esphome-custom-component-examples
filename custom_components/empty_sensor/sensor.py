@@ -3,12 +3,12 @@ import esphome.config_validation as cv
 from esphome.components import sensor
 from esphome.const import CONF_ID
 
-empty_custom_sensor_ns = cg.esphome_ns.namespace('empty_custom_sensor')
+empty_sensor_ns = cg.esphome_ns.namespace('empty_sensor')
 
-EmptyCustomSensor = empty_custom_sensor_ns.class_('EmptyCustomSensor', cg.PollingComponent)
+EmptySensor = empty_sensor_ns.class_('EmptySensor', cg.PollingComponent)
 
 CONFIG_SCHEMA = cv.Schema({
-    cv.GenerateID(): cv.declare_id(EmptyCustomSensor)
+    cv.GenerateID(): cv.declare_id(EmptySensor)
 }).extend(cv.polling_component_schema('60s'))
 
 def to_code(config):

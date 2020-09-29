@@ -5,9 +5,9 @@
 #include "esphome/components/light/light_output.h"
 
 namespace esphome {
-namespace empty_custom_light {
+namespace empty_light {
 
-class EmptyCustomLightOutput : public light::LightOutput, public Component {
+class EmptyLightOutput : public light::LightOutput, public Component {
  public:
   void setup() override;
   light::LightTraits get_traits() override;
@@ -19,5 +19,5 @@ class EmptyCustomLightOutput : public light::LightOutput, public Component {
   output::FloatOutput *output_;
 };
 
-} //namespace empty_custom_light
+} //namespace empty_light
 } //namespace esphome

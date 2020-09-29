@@ -1,16 +1,16 @@
 #include "esphome/core/log.h"
-#include "empty_custom_light.h"
+#include "empty_light.h"
 
 namespace esphome {
-namespace empty_custom_light {
+namespace empty_light {
 
-static const char *TAG = "empty_custom_light.light";
+static const char *TAG = "empty_light.light";
 
-void EmptyCustomLightOutput::setup() {
+void EmptyLightOutput::setup() {
    
 }
 
-light::LightTraits EmptyCustomLightOutput::get_traits() {
+light::LightTraits EmptyLightOutput::get_traits() {
     auto traits = light::LightTraits();
     traits.set_supports_brightness(true);
     traits.set_supports_rgb(false);
@@ -20,13 +20,13 @@ light::LightTraits EmptyCustomLightOutput::get_traits() {
     return traits;
 }
 
-void EmptyCustomLightOutput::write_state(light::LightState *state) {
+void EmptyLightOutput::write_state(light::LightState *state) {
 
 }
 
-void EmptyCustomLightOutput::dump_config(){
+void EmptyLightOutput::dump_config(){
     ESP_LOGCONFIG(TAG, "Empty custom light");
 }
 
-} //namespace empty_custom_light
+} //namespace empty_light
 } //namespace esphome

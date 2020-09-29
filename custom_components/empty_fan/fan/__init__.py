@@ -3,12 +3,12 @@ import esphome.config_validation as cv
 from esphome.components import fan, output
 from esphome.const import CONF_DIRECTION_OUTPUT, CONF_OSCILLATION_OUTPUT, \
     CONF_OUTPUT, CONF_OUTPUT_ID
-from .. import empty_custom_fan_ns
+from .. import empty_fan_ns
 
-EmptyCustomFan = empty_custom_fan_ns.class_('EmptyCustomFan', cg.Component)
+EmptyFan = empty_fan_ns.class_('EmptyFan', cg.Component)
 
 CONFIG_SCHEMA = fan.FAN_SCHEMA.extend({
-    cv.GenerateID(CONF_OUTPUT_ID): cv.declare_id(EmptyCustomFan),
+    cv.GenerateID(CONF_OUTPUT_ID): cv.declare_id(EmptyFan),
     cv.Required(CONF_OUTPUT): cv.use_id(output.BinaryOutput),
     cv.Optional(CONF_DIRECTION_OUTPUT): cv.use_id(output.BinaryOutput),
     cv.Optional(CONF_OSCILLATION_OUTPUT): cv.use_id(output.BinaryOutput),

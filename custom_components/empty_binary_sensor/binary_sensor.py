@@ -3,12 +3,12 @@ import esphome.config_validation as cv
 from esphome.components import binary_sensor
 from esphome.const import CONF_ID
 
-empty_custom_binary_sensor_ns = cg.esphome_ns.namespace('empty_custom_binary_sensor')
+empty_binary_sensor_ns = cg.esphome_ns.namespace('empty_binary_sensor')
 
-EmptyCustomBinarySensor = empty_custom_binary_sensor_ns.class_('EmptyCustomBinarySensor', binary_sensor.BinarySensor, cg.Component)
+EmptyBinarySensor = empty_binary_sensor_ns.class_('EmptyBinarySensor', binary_sensor.BinarySensor, cg.Component)
 
 CONFIG_SCHEMA = binary_sensor.BINARY_SENSOR_SCHEMA.extend({
-    cv.GenerateID(): cv.declare_id(EmptyCustomBinarySensor),
+    cv.GenerateID(): cv.declare_id(EmptyBinarySensor),
 }).extend(cv.COMPONENT_SCHEMA)
 
 
