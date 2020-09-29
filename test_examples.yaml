@@ -1,0 +1,6 @@
+packages:
+  device: !include device.yaml
+
+sensor:
+  - platform: example_custom_sensor
+    id: example_custom_sensor_1

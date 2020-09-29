@@ -1,0 +1,26 @@
+packages:
+  device: !include device.yaml
+
+sensor:
+  - platform: empty_custom_sensor
+    id: empty_custom_sensor_1
+
+binary_sensor:
+  - platform: empty_custom_binary_sensor
+    id: empty_custom_binary_sensor_1
+  
+output:
+  - platform: empty_custom_binary_output
+    id: empty_custom_binary_output_1
+
+  - platform: empty_custom_float_output
+    id: empty_custom_float_output_1
+
+light:
+  - platform: empty_custom_light
+    id: empty_custom_light_1
+    output: empty_custom_float_output_1
+    
+switch:
+  - platform: empty_custom_switch
+    id: empty_custom_switch_1

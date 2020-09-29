@@ -1,0 +1,5 @@
+esphome:
+    name: custom_components_test
+    platform: ESP8266
+    board: nodemcuv2
+    build_path: .build/custom_components_test
