@@ -56,3 +56,11 @@ uart:
 
 empty_uart_component:
   id: empty_uart_component_1
+
+spi:
+  clk_pin: D5
+  miso_pin: D6
+
+empty_spi_component:
+  id: empty_spi_component_1
+  cs_pin: D8

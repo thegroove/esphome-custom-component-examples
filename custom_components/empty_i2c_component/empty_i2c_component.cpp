@@ -15,7 +15,7 @@ void EmptyI2CComponent::loop() {
 }
 
 void EmptyI2CComponent::dump_config(){
-    ESP_LOGCONFIG(TAG, "Empty i2c component");
+    ESP_LOGCONFIG(TAG, "Empty I2C component");
 }
 
 

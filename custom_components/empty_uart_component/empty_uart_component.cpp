@@ -15,7 +15,7 @@ void EmptyUARTComponent::loop() {
 }
 
 void EmptyUARTComponent::dump_config(){
-    ESP_LOGCONFIG(TAG, "Empty i2c component");
+    ESP_LOGCONFIG(TAG, "Empty UART component");
 }
 
 }  // namespace empty_uart_component
