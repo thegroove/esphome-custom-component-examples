@@ -22,7 +22,7 @@ void EmptyCustomFan::loop() {
 }
 
 void EmptyCustomFan::dump_config() {
-  ESP_LOGCONFIG(TAG, "Fan '%s':", this->fan_->get_name().c_str());
+  ESP_LOGCONFIG(TAG, "Empty fan");
 }
 
 }  // namespace binary
