@@ -37,3 +37,6 @@ text_sensor:
 cover:
   platform: empty_cover
   id: empty_cover_1
+
+empty_component:
+  id: empty_component_1
