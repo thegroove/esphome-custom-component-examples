@@ -3,6 +3,7 @@
 # You can modify this file to suit your needs.
 /.build/
 /.esphome/
+/.vscode
 **/.pioenvs/
 **/.piolibdeps/
 **/lib/
