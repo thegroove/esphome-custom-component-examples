@@ -1,4 +1,4 @@
-#include "esphome.h"
+#include "esphome/core/log.h"
 #include "example_custom_sensor.h"
 
 namespace esphome {
@@ -17,7 +17,7 @@ void ExampleCustomSensor::update(){
 }
 
 void ExampleCustomSensor::dump_config(){
-
+  ESP_LOGCONFIG(TAG, "Empty custom sensor");
 }
 
 } //namespace example_custom_sensor

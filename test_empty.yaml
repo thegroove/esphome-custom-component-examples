@@ -24,3 +24,16 @@ light:
 switch:
   - platform: empty_custom_switch
     id: empty_custom_switch_1
+
+fan:
+  - platform: empty_custom_fan
+    id: empty_custom_fan_1
+    output: empty_custom_binary_output_1
+
+text_sensor:
+  - platform: empty_text_sensor
+    id: empty_text_sensor_1
+
+cover:
+  platform: empty_cover
+  id: empty_cover_1

@@ -1,8 +1,10 @@
-#include "esphome.h"
+#include "esphome/core/log.h"
 #include "empty_custom_light.h"
 
 namespace esphome {
 namespace empty_custom_light {
+
+static const char *TAG = "empty_custom_light.light";
 
 void EmptyCustomLightOutput::setup() {
    
@@ -23,7 +25,7 @@ void EmptyCustomLightOutput::write_state(light::LightState *state) {
 }
 
 void EmptyCustomLightOutput::dump_config(){
-
+    ESP_LOGCONFIG(TAG, "Empty custom light");
 }
 
 } //namespace empty_custom_light
