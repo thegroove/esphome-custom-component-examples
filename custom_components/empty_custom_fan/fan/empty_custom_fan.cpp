@@ -18,7 +18,12 @@ void EmptyCustomFan::setup() {
 }
 
 void EmptyCustomFan::loop() {
- 
+  if (!this->next_update_) {
+    return; //no state change, nothing to do
+  }
+  this->next_update_ = false;
+  
+  //there was a state change, do something here.
 }
 
 void EmptyCustomFan::dump_config() {

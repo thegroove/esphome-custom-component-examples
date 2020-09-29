@@ -14,14 +14,10 @@ class EmptyCustomFan : public Component {
   void setup() override;
   void loop() override;
   void dump_config() override;
-  void set_oscillating(output::BinaryOutput *oscillating) { this->oscillating_ = oscillating; }
-  void set_direction(output::BinaryOutput *direction) { this->direction_ = direction; }
-
+  
  protected:
   fan::FanState *fan_;
   output::BinaryOutput *output_;
-  output::BinaryOutput *oscillating_{nullptr};
-  output::BinaryOutput *direction_{nullptr};
   bool next_update_{true};
 };
 
