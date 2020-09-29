@@ -40,3 +40,19 @@ cover:
 
 empty_component:
   id: empty_component_1
+
+i2c:
+  sda: 4
+  scl: 5
+
+empty_i2c_component:
+  id: empty_i2c_component_1
+  address: 0x01
+
+uart:
+  tx_pin: D0
+  rx_pin: D1
+  baud_rate: 9600
+
+empty_uart_component:
+  id: empty_uart_component_1
