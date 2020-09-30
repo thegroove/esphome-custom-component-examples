@@ -13,20 +13,11 @@ CONF_SENSOR3 = "sensor3"
 CONFIG_SCHEMA = cv.Schema({
     cv.GenerateID(): cv.declare_id(EmptyCompoundSensor),
     cv.Optional(CONF_SENSOR1):
-        sensor.sensor_schema(UNIT_EMPTY, ICON_EMPTY, 1).extend({
-            #cv.Optional(CONF_OVERSAMPLING, default='16X'):
-            #    cv.enum(OVERSAMPLING_OPTIONS, upper=True),
-        }),
+        sensor.sensor_schema(UNIT_EMPTY, ICON_EMPTY, 1).extend(),
     cv.Optional(CONF_SENSOR2):
-        sensor.sensor_schema(UNIT_EMPTY, ICON_EMPTY, 1).extend({
-            #cv.Optional(CONF_OVERSAMPLING, default='16X'):
-            #    cv.enum(OVERSAMPLING_OPTIONS, upper=True),
-        }),
+        sensor.sensor_schema(UNIT_EMPTY, ICON_EMPTY, 1).extend(),
     cv.Optional(CONF_SENSOR3):
-        sensor.sensor_schema(UNIT_EMPTY, ICON_EMPTY, 1).extend({
-            #cv.Optional(CONF_OVERSAMPLING, default='16X'):
-            #    cv.enum(OVERSAMPLING_OPTIONS, upper=True),
-        })
+        sensor.sensor_schema(UNIT_EMPTY, ICON_EMPTY, 1).extend()
 }).extend(cv.polling_component_schema('60s'))
 
 
