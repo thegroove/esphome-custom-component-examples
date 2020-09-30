@@ -5,6 +5,13 @@ sensor:
   - platform: empty_sensor
     id: empty_sensor_1
 
+  - platform: empty_i2c_sensor
+    id: empty_i2c_sensor_1
+
+  - platform: empty_spi_sensor
+    id: empty_spi_sensor_1
+    cs_pin: D8
+
 binary_sensor:
   - platform: empty_binary_sensor
     id: empty_binary_sensor_1
