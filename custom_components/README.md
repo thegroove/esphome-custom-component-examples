@@ -1,0 +1,4 @@
+```yaml
+# example configuration:
+
+```
