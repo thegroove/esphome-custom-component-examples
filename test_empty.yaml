@@ -12,6 +12,9 @@ sensor:
     id: empty_spi_sensor_1
     cs_pin: D8
 
+  - platform: empty_uart_sensor
+    id: empty_uart_sensor_1
+
 binary_sensor:
   - platform: empty_binary_sensor
     id: empty_binary_sensor_1
