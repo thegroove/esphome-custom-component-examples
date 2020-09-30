@@ -5,12 +5,11 @@ This repository provides examples and basic empty components that can be used as
 ## How to use
 All sample components can be found in the `custom_components` directory. The `test_empty_components.yaml` file provides configuration examples for the various custom components. To use a particular component for your project, do the following:
 
-
 - Create a `custom_components` directory in your esphome configuration directory (the directory where your ```.yaml``` files are)
 
 - Copy the directory of an empty component to `custom_components` in its entirety, so you end up with e.g. `custom_components/empty_sensor/`
 
-- Find the configuration entry for the empty component in `test_empty.yaml` and copy it into your own `.yaml` file.
+- Find the configuration entry for the empty component in `test_empty_components.yaml` and copy it into your own `.yaml` file.
 
 - Compile with `esphome your_config.yaml compile` (change `your_config.yaml` to your own `.yaml` file) or compile with the dashboard.
 
