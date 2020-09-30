@@ -3,7 +3,7 @@
 This repository provides examples and basic empty components that can be used as templates to quickly develop your own custom components for the splendid [ESPHome](https://esphome.io/) ESP8266/ESP32 home automation system.
 
 ## How to use
-All sample components can be found in the `custom_components` directory. The `test_*.yaml` files provide configuration examples for the various custom components. To use a particular component for your project, do the following:
+All sample components can be found in the `custom_components` directory. The `test_empty_components.yaml` file provides configuration examples for the various custom components. To use a particular component for your project, do the following:
 
 
 - Create a `custom_components` directory in your esphome configuration directory (the directory where your ```.yaml``` files are)
