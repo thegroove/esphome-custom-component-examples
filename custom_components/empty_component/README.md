@@ -1,4 +1,4 @@
-```
+```yaml
 # example configuration:
 
 empty_component:
