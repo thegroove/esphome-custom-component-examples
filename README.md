@@ -1,4 +1,4 @@
-# ESPHome custom component examples
+# ![ESPHome logo](esphome-logo.png)ESPHome custom component examples
 
 This repository provides examples and basic empty components that can be used as templates to quickly develop your own custom components for the splendid [ESPHome](https://esphome.io/) ESP8266/ESP32 home automation system.
 
