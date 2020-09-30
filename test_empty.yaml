@@ -1,5 +1,8 @@
+# this configuration file has all empty custom components set up.
+# use 'esphome test_empty.yaml compile' to build. 
+
 packages:
-  device: !include device.yaml
+  device: !include device.yaml # include our test device setup
 
 sensor:
   - platform: empty_sensor

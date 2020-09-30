@@ -1,3 +1,5 @@
+# this is just a simple test device setup that's used to compile and test the examples
+
 esphome:
     name: custom_components_test
     platform: ESP8266
