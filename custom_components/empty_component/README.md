@@ -1,3 +1,4 @@
 ```
 empty_component:
-  id: empty_component_1```
+  id: empty_component_1
+```
