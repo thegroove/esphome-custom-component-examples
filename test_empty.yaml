@@ -15,6 +15,15 @@ sensor:
   - platform: empty_uart_sensor
     id: empty_uart_sensor_1
 
+  - platform: empty_compound_sensor
+    id: empty_compound_sensor_1
+    sensor1:
+      name: "Sensor 1"
+    sensor2:
+      name: "Sensor 2"
+    sensor3:
+      name: "Sensor 3"  
+
 binary_sensor:
   - platform: empty_binary_sensor
     id: empty_binary_sensor_1
