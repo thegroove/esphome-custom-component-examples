@@ -6,30 +6,29 @@ packages:
 
 sensor:
   - platform: empty_sensor
-    id: empty_sensor_1
+    name: Empty sensor
 
   - platform: empty_i2c_sensor
-    id: empty_i2c_sensor_1
+    name: Empty I2C sensor
 
   - platform: empty_spi_sensor
-    id: empty_spi_sensor_1
+    name: Empty SPI sensor
     cs_pin: D8
 
   - platform: empty_uart_sensor
-    id: empty_uart_sensor_1
+    name: Empty UART sensor
 
   - platform: empty_compound_sensor
-    id: empty_compound_sensor_1
     sensor1:
-      name: "Sensor 1"
+      name: Sensor 1
     sensor2:
-      name: "Sensor 2"
+      name: Sensor 2
     sensor3:
-      name: "Sensor 3"  
+      name: Sensor 3  
 
 binary_sensor:
   - platform: empty_binary_sensor
-    id: empty_binary_sensor_1
+    name: Empty binary sensor
   
 output:
   - platform: empty_binary_output
@@ -40,25 +39,25 @@ output:
 
 light:
   - platform: empty_light
-    id: empty_light_1
+    name: Empty light
     output: empty_float_output_1
     
 switch:
   - platform: empty_switch
-    id: empty_switch_1
+    name: Empty switch
 
 fan:
   - platform: empty_fan
-    id: empty_fan_1
+    name: Empty fan
     output: empty_binary_output_1
 
 text_sensor:
   - platform: empty_text_sensor
-    id: empty_text_sensor_1
+    name: Empty text sensor
 
 cover:
   platform: empty_cover
-  id: empty_cover_1
+  name: Empty cover
 
 empty_component:
   id: empty_component_1
