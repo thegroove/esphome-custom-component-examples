@@ -18,6 +18,10 @@ void EmptySensorHub::dump_config(){
     for(auto *text_sensor : this->text_sensors_){
         LOG_TEXT_SENSOR("  ", "Text sensor", text_sensor);
     }
+
+    for(auto *binary_sensor : this->binary_sensors_){
+        LOG_BINARY_SENSOR("  ", "Binary sensor", binary_sensor);
+    }
 }
 
 } //namespace empty_sensor_hub
